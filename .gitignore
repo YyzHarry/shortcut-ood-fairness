@@ -12,7 +12,9 @@ plots/data*/
 playground/data*/
 playground/figures*/
 notebooks/*.csv
-notebooks/*.ipynb
+notebooks/agg*.ipynb
+notebooks/figure*.ipynb
+notebooks/supp*.ipynb
 notebooks/figures
 
 # C extensions

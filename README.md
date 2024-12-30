@@ -1,11 +1,11 @@
-# The Limits of Fair Medical Imaging AI In The Wild
+## The Limits of Fair Medical Imaging AI In Real-World Generalization
 
 [![License](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/YyzHarry/shortcut-ood-fairness/blob/main/LICENSE)
 ![](https://img.shields.io/github/stars/YyzHarry/shortcut-ood-fairness)
 ![](https://img.shields.io/github/forks/YyzHarry/shortcut-ood-fairness)
 ![](https://visitor-badge.laobi.icu/badge?page_id=YyzHarry.shortcut-ood-fairness&right_color=%23FFA500)
 
-[[Paper](https://arxiv.org/abs/2312.10083)]
+[[Paper](https://www.nature.com/articles/s41591-024-03113-4)] [[MIT News](https://news.mit.edu/2024/study-reveals-why-ai-analyzed-medical-images-can-be-biased-0628)]
 
 **Summary**: As artificial intelligence (AI) rapidly approaches human-level performance in medical imaging, it is crucial that it does not exacerbate or propagate healthcare disparities. Prior research has established AI’s capacity to infer demographic data from chest X-rays, leading to a key concern: do models using demographic shortcuts have unfair predictions across subpopulations? In this study, we conduct a thorough investigation into the extent to which medical AI utilizes demographic encodings, focusing on potential fairness discrepancies within both in-distribution training sets and external test sets. Our analysis covers three key medical imaging disciplines: radiology, dermatology, and ophthalmology, and incorporates data from six global chest X-ray datasets. We confirm that medical imaging AI leverages demographic shortcuts in disease classification. While correcting shortcuts algorithmically effectively addresses fairness gaps to create "locally optimal" models within the original data distribution, this optimality is not true in new test settings. Surprisingly, we find that models with less encoding of demographic attributes are often most "globally optimal", exhibiting better fairness during model evaluation in new test environments. Our work establishes best practices for medical imaging models which maintain their performance and fairness in deployments beyond their initial training contexts, underscoring critical considerations for AI clinical deployments across populations and sites.
 
@@ -56,11 +56,13 @@ This code is partly based on the open-source implementations from [SubpopBench](
 If you find this code or idea useful, please cite our work:
 
 ```bibtex
-@article{yang2023limits,
-  title={The Limits of Fair Medical Imaging AI In The Wild},
-  author={Yuzhe Yang and Haoran Zhang and Judy W Gichoya and Dina Katabi and Marzyeh Ghassemi},
-  journal={arXiv preprint arXiv:2312.10083},
-  year={2023}
+@article{yang2024limits,
+  title={The limits of fair medical imaging AI in real-world generalization},
+  author={Yang, Yuzhe and Zhang, Haoran and Gichoya, Judy W and Katabi, Dina and Ghassemi, Marzyeh},
+  journal={Nature Medicine},
+  pages={1--11},
+  year={2024},
+  publisher={Nature Publishing Group US New York}
 }
 ```
 
